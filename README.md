@@ -27,7 +27,7 @@ Custom configuration files.
   The output from `ctags --version` should say "Exuberant CTags"  
 
 2. Use the template directory for all new git repos:
-  `git config --global init.templatedir '<PATH_TO_REPO>/git_template'
+  `git config --global init.templatedir '<PATH_TO_REPO>/git_template'`
 
 3. Add the template files to pre-existing repos:
   `git init`
