@@ -15,6 +15,7 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
+set incsearch     " highlight while searching
 
 let g:ctrlp_working_path_mode = 'ra' " start from repo or current dir
 
