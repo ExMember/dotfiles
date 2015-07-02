@@ -57,6 +57,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/tComment'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'reedes/vim-pencil'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
