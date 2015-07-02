@@ -57,6 +57,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/tComment'
+Bundle 'reedes/vim-pencil'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
@@ -84,12 +85,20 @@ augroup vimrcEx
   " Set syntax highlighting for specific file types
   autocmd BufRead,BufNewFile Appraisals set filetype=ruby
   autocmd BufRead,BufNewFile *.md set filetype=markdown
+  autocmd BufRead,BufNewFile *.fountain set filetype=fountain
 
   " Enable spellchecking for Markdown
   autocmd FileType markdown setlocal spell
 
   " Automatically wrap at 80 characters for Markdown
   autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+augroup END
+
+augroup pencil
+  autocmd!
+"  autocmd FileType markdown,mkd call pencil#init()
+"  autocmd FileType text call pencil#init()
+  autocmd FileType fountain call pencil#init()
 augroup END
 
 " Softtabs, 2 spaces
