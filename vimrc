@@ -61,6 +61,7 @@ Bundle 'vim-scripts/tComment'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'reedes/vim-pencil'
+Bundle 'vim-scripts/fountain.vim'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
