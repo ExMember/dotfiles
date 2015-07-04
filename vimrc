@@ -62,6 +62,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'reedes/vim-pencil'
 Bundle 'vim-scripts/fountain.vim'
+Bundle 'airblade/vim-gitgutter'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
@@ -200,3 +201,7 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
+" Update git gutter more quickly
+let g:gitgutter_realtime = 500
+let g:gitgutter_sign_column_always = 1
+let g:gitgutter_highlight_lines = 1
