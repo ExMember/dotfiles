@@ -62,6 +62,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'reedes/vim-pencil'
 Bundle 'vim-scripts/fountain.vim'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'scrooloose/nerdtree'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
