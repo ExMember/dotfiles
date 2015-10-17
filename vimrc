@@ -40,7 +40,6 @@ Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
 Bundle 'christoomey/vim-run-interactive'
-Bundle 'croaky/vim-colors-github'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'danro/rename.vim'
 Bundle 'kchmck/vim-coffee-script'
