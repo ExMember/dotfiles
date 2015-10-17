@@ -106,6 +106,9 @@ augroup pencil
   autocmd FileType fountain call pencil#init()
 augroup END
 
+" Auto save when leaving buffer
+autocmd BufLeave,FocusLost * silent! wall
+
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
