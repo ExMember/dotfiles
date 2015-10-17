@@ -201,4 +201,4 @@ endif
 " Update git gutter more quickly
 let g:gitgutter_realtime = 500
 let g:gitgutter_sign_column_always = 1
-let g:gitgutter_highlight_lines = 1
+let g:gitgutter_highlight_lines = 0
