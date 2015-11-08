@@ -36,3 +36,7 @@ Custom configuration files.
 
 Update the ctags file whenever the repository changes. (Stolen from [Tim
 Pope](http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html))
+
+# rspec
+
+Link to the new rspec config file: `ln -s <PATH_TO_REPO>/dotfiles/rspec ~/.rspec
