@@ -63,6 +63,7 @@ Bundle 'reedes/vim-pencil'
 Bundle 'vim-scripts/fountain.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-commentary'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
