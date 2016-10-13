@@ -192,11 +192,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" Add syntax errors to status
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 " don't do syntax checking open or quit (only save)
 let g:syntastic_check_on_open=0
 let g:syntastic_check_on_wq = 0
