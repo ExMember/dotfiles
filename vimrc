@@ -64,6 +64,8 @@ Bundle 'vim-scripts/fountain.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-commentary'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
@@ -198,6 +200,9 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+" Treat js files as React files (for the sake of Ponton)
+let g:jsx_ext_required = 0
+
 
 " Update git gutter more quickly
 let g:gitgutter_realtime = 500
