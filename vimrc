@@ -192,19 +192,30 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-" configure syntastic syntax checking to check on open as well as save
-let g:syntastic_check_on_open=1
+" Add syntax errors to status
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" don't do syntax checking open or quit (only save)
+let g:syntastic_check_on_open=0
+let g:syntastic_check_on_wq = 0
+
+" ignore angular-specific attributes
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
-" Local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
 " Treat js files as React files (for the sake of Ponton)
 let g:jsx_ext_required = 0
 
+" use ruby interpreter and rubocop to check ruby syntax
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 
 " Update git gutter more quickly
 let g:gitgutter_realtime = 500
 let g:gitgutter_sign_column_always = 1
 let g:gitgutter_highlight_lines = 0
+
+" Local config
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
