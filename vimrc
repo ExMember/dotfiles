@@ -59,13 +59,18 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'vim-scripts/tComment'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'reedes/vim-pencil'
+Bundle 'ExMember/vim-pencil'
 Bundle 'vim-scripts/fountain.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-commentary'
 Bundle 'pangloss/vim-javascript'
 Bundle 'mxw/vim-jsx'
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+
+let g:pencil#conceallevel = 0
+let g:pandoc#syntax#codeblocks#embeds#langs = ['javascript', 'ruby', 'sh', 'yaml', 'javascript', 'html', 'vim', 'coffee', 'json', 'diff']
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local
@@ -104,8 +109,9 @@ augroup END
 
 augroup pencil
   autocmd!
-"  autocmd FileType markdown,mkd call pencil#init()
-"  autocmd FileType text call pencil#init()
+  autocmd FileType pandoc call pencil#init()
+  autocmd FileType markdown call pencil#init()
+  autocmd FileType text call pencil#init()
   autocmd FileType fountain call pencil#init()
 augroup END
 
