@@ -19,16 +19,6 @@ set incsearch     " highlight while searching
 
 let g:ctrlp_working_path_mode = 'ra' " start from repo or current dir
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-endif
-
-if &compatible
-  set nocompatible
-end
-
 " Vundle config
 " https://github.com/VundleVim/Vundle.vim
 filetype off
