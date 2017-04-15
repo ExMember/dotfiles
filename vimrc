@@ -5,7 +5,8 @@ set nocompatible
 """"""""""""""""""
 " Vundle
 " https://github.com/VundleVim/Vundle.vim
-filetype off
+filetype on " Required so vi on OS X doesn't exit with an exit code of 1
+filetype off " Required for Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
