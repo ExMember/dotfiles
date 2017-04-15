@@ -211,7 +211,7 @@ augroup pencil
   autocmd FileType pandoc call pencil#init()
   autocmd FileType markdown call pencil#init()
   autocmd FileType text call pencil#init()
-  autocmd FileType fountain call pencil#init()
+  autocmd FileType fountain call pencil#init({'wrap': 'soft'})
 augroup END
 
 augroup autosave
