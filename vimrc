@@ -43,6 +43,7 @@ Plugin 'vim-scripts/ctags.vim'
 Plugin 'vim-scripts/fountain.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
+Plugin 'mustache/vim-mustache-handlebars'
 call vundle#end()
 filetype plugin indent on
 
