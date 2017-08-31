@@ -120,6 +120,8 @@ let g:pencil#conceallevel = 0 " Don't hide things
 " vim-pandoc
 " do syntax highlighting for these languages
 let g:pandoc#syntax#codeblocks#embeds#langs = ['javascript', 'ruby', 'sh', 'yaml', 'javascript', 'html', 'vim', 'coffee', 'json', 'diff']
+" do no folding by default
+let g:pandoc#folding#level = 99
 
 
 """"""""""""""""
