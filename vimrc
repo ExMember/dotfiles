@@ -44,6 +44,7 @@ Plugin 'vim-scripts/fountain.vim'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'keith/swift.vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -135,7 +136,9 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 let g:jsx_ext_required = 0
 " use ruby interpreter and rubocop to check ruby syntax
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-
+" Use Swift defaults
+let g:syntastic_swift_swiftlint_use_defaults = 1
+let g:syntastic_swift_checkers = ['swiftlint', 'swiftpm']
 
 """"""""""""""""
 " Git-gutter
