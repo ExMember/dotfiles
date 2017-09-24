@@ -211,6 +211,9 @@ augroup filetypes
 
   " Automatically wrap at 80 characters for text files
   autocmd FileType markdown,fountain setlocal textwidth=80
+
+  " Strip trailing whitespace
+  autocmd FileType c,cpp,java,php,ruby,javascript autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup END
 
 augroup pencil
