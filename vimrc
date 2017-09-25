@@ -45,6 +45,7 @@ Plugin 'vim-scripts/matchit.zip'
 Plugin 'vim-scripts/tComment'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'kballard/vim-swift'
+Plugin 'junegunn/vim-easy-align'
 call vundle#end()
 filetype plugin indent on
 
