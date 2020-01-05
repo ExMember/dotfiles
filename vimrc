@@ -194,13 +194,6 @@ augroup vimrcEx
     \ endif
 augroup END
 
-
-augroup rubynav
-  " Cucumber navigation commands
-  autocmd User Rails Rnavcommand step features/step_definitions -glob=**/* -suffix=_steps.rb
-  autocmd User Rails Rnavcommand config config -glob=**/* -suffix=.rb -default=routes
-augroup END
-
 augroup filetypes
   " Set syntax highlighting for specific file types
   autocmd BufRead,BufNewFile Appraisals set filetype=ruby
