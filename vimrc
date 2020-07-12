@@ -76,7 +76,7 @@ set tabstop=2       " Softtabs, 2 spaces
 set textwidth=80    " Make it obvious where 80 characters is
 set nowritebackup
 set foldlevelstart=99 " Start with nothing folded
-
+set guifont=Menlo-Regular:h17 " fit two 80-char buffers on half the screen
 silent! colorscheme solarized
 
 
