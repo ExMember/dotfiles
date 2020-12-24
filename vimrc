@@ -213,13 +213,13 @@ augroup filetypes
   autocmd FileType c,cpp,java,php,ruby,javascript autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup END
 
-augroup pencil
-  autocmd!
-  autocmd FileType pandoc call pencil#init()
-  autocmd FileType markdown call pencil#init()
-  autocmd FileType text call pencil#init()
-  autocmd FileType fountain call pencil#init({'wrap': 'soft'})
-augroup END
+" augroup pencil
+"   autocmd!
+"   autocmd FileType pandoc call pencil#init()
+"   autocmd FileType markdown call pencil#init()
+"   autocmd FileType text call pencil#init()
+"   autocmd FileType fountain call pencil#init({'wrap': 'soft'})
+" augroup END
 
 augroup autosave
   " Auto save when leaving buffer
