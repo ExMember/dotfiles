@@ -18,6 +18,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'christoomey/vim-run-interactive'
 Plugin 'danro/rename.vim'
+Plugin 'godlygeek/tabular' " required for and must come before vim-markdown
 Plugin 'reedes/vim-pencil'
 Plugin 'kana/vim-textobj-user'
 Plugin 'kchmck/vim-coffee-script'
@@ -26,6 +27,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'pangloss/vim-javascript'
 Plugin 'pbrisbin/vim-mkdir'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim'
@@ -119,6 +121,10 @@ let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 " vim-pencil
 let g:pencil#conceallevel = 0 " Don't hide things
 
+""""""""""""""""""
+" vim-markdown
+let g:vim_markdown_frontmatter = 1 " Highlight YAML front matter as used by Jekyll
+let g:vim_markdown_no_extensions_in_markdown = 1
 
 """"""""""""""""""
 " vim-pandoc
@@ -204,10 +210,10 @@ augroup filetypes
   autocmd BufRead,BufNewFile *.fountain set filetype=fountain
 
   " Enable spellchecking for Markdown
-  autocmd FileType markdown setlocal spell
+  autocmd FileType pandoc,markdown setlocal spell
 
   " Automatically wrap at 80 characters for text files
-  autocmd FileType markdown,fountain setlocal textwidth=80
+  autocmd FileType pandoc,markdown,fountain setlocal textwidth=80
 
   " Strip trailing whitespace
   autocmd FileType c,cpp,java,php,ruby,javascript autocmd BufWritePre <buffer> %s/\s\+$//e
