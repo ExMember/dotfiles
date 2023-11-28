@@ -143,6 +143,8 @@ let g:syntastic_check_on_wq = 0 " don't check syntax on quit (who cares?)
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 " Treat js files as React files (for the sake of Ponton)
 let g:jsx_ext_required = 0
+" Use haml-lint to check haml (https://github.com/sds/haml-lint)
+let g:syntastic_haml_checkers = ['haml_lint']
 " use ruby interpreter and rubocop to check ruby syntax
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
 " Use Swift defaults
